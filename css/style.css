@@ -1,11 +1,17 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "roboto", sans-serif;
-}
+
 html{
 display: flex;
+}
+
+
+
+*
+{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: "roboto", sans-serif;
+overflow-x: hidden;
 }
 
 :root {
@@ -28,6 +34,7 @@ display: flex;
 }
 
 a {
+    position: relative;
     text-decoration: none;
     color: var(--secondary-color-300);
 }
@@ -46,10 +53,9 @@ li {
 
 .main-container {
     background: url("../assets/images/Home\ Screen.jpg") no-repeat;
-    max-width: 1550px;
     padding: 50px 80px 80px 80px;
     color: var(--secondary-color-300);
-
+width: 100%;;
     display: flex;
     flex-direction: column;
     gap: 170px; 
@@ -61,9 +67,8 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 53px;
 
-    width: 90%;
+    width: 100%;
 }
 
 .highlight {
@@ -92,7 +97,7 @@ li {
     width: auto;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
     letter-spacing: 0.2px;
 }
@@ -101,7 +106,7 @@ li {
     color: #FFFFFF;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 120%;
 }
 
@@ -109,7 +114,7 @@ li {
     color: #FFFFFF;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
     letter-spacing: 0.2px;
 }
@@ -138,7 +143,7 @@ li {
 .header-small {
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 140%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
@@ -149,7 +154,7 @@ li {
     width: 100%;
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4rem;
     color: #FFFFFF;
 }
 
@@ -157,7 +162,7 @@ li {
     display: flex;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 140%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
@@ -214,7 +219,7 @@ li {
 .section-heading {
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
     letter-spacing: 0.2px;
     color: var(--secondary-color-800);
@@ -256,7 +261,7 @@ li {
 .section-detail-heading {
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 110%;
     color: var(--secondary-color-900);
 }
@@ -270,7 +275,7 @@ li {
 .section-detail-para .bright-900 {
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
     letter-spacing: 0.2px;
     color: var(----secondary-color-900);
@@ -280,7 +285,7 @@ li {
 
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
     letter-spacing: 0.2px;
     color: var(--secondary-color-600);
@@ -289,7 +294,7 @@ li {
 .read-button button {
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 140%;
     letter-spacing: 0.2px;
     color: var(--primary-color);
@@ -325,7 +330,7 @@ li {
 .numeric-representation{
 font-style: normal;
 font-weight: 600;
-font-size: 42px;
+font-size: 2.625rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 color: #FFFFFF;
@@ -335,7 +340,7 @@ margin : 0 auto;
 .stat-description{
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 0.875rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 color: #FFFFFF;
@@ -367,7 +372,7 @@ margin : 0 auto;
 .head-desc{
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
+font-size: 2.5rem;
 line-height: 110%;
 color:var(--secondary-color-900);
 text-align: center;
@@ -379,9 +384,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 0px;
+width: 100%;
 
 background: #FFFFFF;
-border: 1px solid var(--secondary-color-300);
+border: 2px solid var(--secondary-color-300);
 
 }
 
@@ -394,6 +400,7 @@ gap: 8px;
 width: 100%;
 height: auto;
 background: #FFFFFF;
+padding : 20px;
 }
 
 
@@ -407,7 +414,7 @@ gap: 48px;
 .main-desc{
 font-style: normal;
 font-weight: 500;
-font-size: 16px;
+font-size: 1rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 text-transform: uppercase;
@@ -418,7 +425,7 @@ margin: 0 auto;
 .secondary-desc{
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 0.875rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 color: var(--secondary-color-700);
@@ -500,7 +507,7 @@ gap: 16px;
     margin: 0 auto;
 font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 1.25rem;
 line-height: 140%;
 text-align: center;
 letter-spacing: 0.2px;
@@ -512,7 +519,7 @@ font-weight: bold;
     margin: 0 auto;
 font-style: normal;
 font-weight: 500;
-font-size: 12px;
+font-size: 0.75rem;
 line-height: 18px;
 letter-spacing: 0.2px;
 color: var(--secondary-color-600);
@@ -573,7 +580,7 @@ max-width: 250px;
 width: 80%;
 font-style: normal;
 font-weight: 500;
-font-size: 16px;
+font-size: 1rem;
 line-height: 140%;
 text-align: center;
 letter-spacing: 0.2px;
@@ -595,7 +602,7 @@ max-width: 193px;
 .testimonial-author{
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
+font-size: 1rem;
 line-height: 140%;
 text-align: center;
 letter-spacing: 0.2px;
@@ -607,7 +614,7 @@ color: var(--secondary-color-900);
 .testimonial-mail{
 font-style: normal;
 font-weight: 500;
-font-size: 12px;
+font-size: 0.75rem;
 line-height: 18px;
 text-align: center;
 letter-spacing: 0.2px;
@@ -643,7 +650,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
-
+gap:24px;
 margin: 0 auto;
 width: 150px;
 height: auto;
@@ -654,7 +661,7 @@ width: 100%;
 height: auto;
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
+font-size: 1rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 color: var(----secondary-color-900);
@@ -671,7 +678,7 @@ padding: 0px;
 .footer-navitem a{
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 0.875rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 color: var(--secondary-color-600) !important;
@@ -680,7 +687,7 @@ color: var(--secondary-color-600) !important;
 .desc-main{
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 0.875rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 color: var(--secondary-color-600);
@@ -689,8 +696,72 @@ color: var(--secondary-color-600);
 .company-mail{
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 0.875rem;
 line-height: 140%;
 letter-spacing: 0.2px;
 color: var(--secondary-color-600);
+}
+
+
+/* some basic animation  */
+
+
+.hover-effect::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease-in-out;
+    border-radius:40px; 
+    left:-2px;
+    bottom:-5px;
+}
+
+.hover-effect:hover::after{
+    transform: scaleX(1);
+}
+button{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+transform: translateY(-2px);
+}
+
+.highlighter-box{
+    position: absolute;
+    background-color: var(--primary-color);
+}
+
+
+
+/* mobile responsive   */
+
+@media (max-width: 377px) {
+    .main-container,
+    .container.container-large,
+    .container.container-rooms,
+    .container.container-services,
+    .container.container-testimonial,
+    .container.container-footer,
+    .container.container-stats {
+        padding: 20px ;
+    }
+
+    .hero-container {
+        width: 100%;
+    }
+    .header-main{
+        font-size: 2rem;
+    }
+    .section-layer{
+        flex-direction: column;
+    }
+    .img-right{
+        order:-1;
+    }
+
 }
