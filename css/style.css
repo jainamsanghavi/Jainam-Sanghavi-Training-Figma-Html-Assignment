@@ -63,6 +63,7 @@ width: 100%;;
     display: flex;
     flex-direction: column;
     gap: 170px; 
+    height: 100vh;
 }
 
 .nav-container {
@@ -306,7 +307,10 @@ display: block;
     border-radius: 12px;
     background: unset;
 }
-
+.read-button button:hover{
+    color: white;
+    background-color: var(--primary-color);
+}
 /* stats section  */
 
 .stats-section {
@@ -354,7 +358,7 @@ margin : 0 auto;
 /* room section  */
 
 .rooms-section{
-    background-color: var(--bg-color);
+    background-color: var(--secondary-color-400);
 }
 
 .heading-rooms{
@@ -390,7 +394,7 @@ flex-direction: column;
 align-items: center;
 padding: 0px;
 width: 100%;
-
+cursor: pointer;
 background: #FFFFFF;
 border: 2px solid var(--secondary-color-300);
 
@@ -405,6 +409,8 @@ gap: 8px;
 width: 100%;
 height: auto;
 background: #FFFFFF;
+transition: all 0.6s ease-in-out;
+
 padding : 20px;
 }
 
@@ -425,6 +431,8 @@ letter-spacing: 0.2px;
 text-transform: uppercase;
 color: var(--secondary-color-900);
 margin: 0 auto;
+transition: all 0.6s ease-in-out;
+
 }
 
 .secondary-desc{
@@ -435,6 +443,8 @@ line-height: 140%;
 letter-spacing: 0.2px;
 color: var(--secondary-color-700);
 margin: 0 auto;
+transition: all 0.6s ease-in-out;
+
 
 }
 
@@ -727,12 +737,14 @@ color: var(--secondary-color-600);
     bottom:-5px;
 }
 
-.hover-effect:active::after{
+.hover-effect:hover{
+    color: var(--primary-color);
     transform: scaleX(1);
 }
 .hover-effect{
     cursor: pointer;
 }
+
 button{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -746,13 +758,11 @@ transform: translateY(-2px);
     background-color: var(--primary-color);
 }
 
-/* hamburger hide  */
 
 .hamburger{
     display: none;
 }
 
-/* mobile responsive   */
 
 @media (max-width: 426px) {
     .main-container,
@@ -826,4 +836,18 @@ flex-wrap: wrap;
    }
 }
 
+.card:hover{
+    border-radius: 10px;
+}
 
+.card:hover .room-description{
+    scale:1.1;
+    background: var(--primary-color);
+}
+
+.card:hover .main-desc {
+    color: white ;
+}
+.card:hover .secondary-desc{
+    color: var(--secondary-color-400);
+}
