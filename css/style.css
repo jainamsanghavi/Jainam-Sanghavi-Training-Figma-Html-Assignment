@@ -774,6 +774,9 @@ transform: translateY(-2px);
     .container.container-stats {
         padding: 20px ;
     }
+    .main-container{
+        gap:207px;
+    }
 
     .hero-container {
         width: 100%;
@@ -851,4 +854,3 @@ flex-wrap: wrap;
 .card:hover .secondary-desc{
     color: var(--secondary-color-400);
 }
-
